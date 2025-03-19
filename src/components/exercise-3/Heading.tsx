@@ -1,5 +1,12 @@
 import { PropsWithChildren } from "react";
 
-export default function Heading({ children }: PropsWithChildren) {
-  return <div>{children}</div>;
+interface Props {
+  isLarge?: boolean;
+}
+
+export default function Heading({
+  children,
+  isLarge = false,
+}: PropsWithChildren<Props>) {
+  return <div className={`${isLarge ? "text-xl" : "text-lg"}`}>{children}</div>;
 }
