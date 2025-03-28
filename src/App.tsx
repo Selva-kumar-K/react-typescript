@@ -1,28 +1,25 @@
-import EmployeeCard from "./components/exercise-2/Employees";
-import Heading from "./components/exercise-3/Heading";
-import IconButton from "./components/exercise-4/IconButton";
+import Appointment from "./components/exercise-5/Appointment";
 
 export default function App() {
-  const name = "Selva";
-  const employees = [
-    {
-      name: "Selva",
-      title: "Software Engineer",
-    },
-    {
-      name: "Nithish",
-      title: "Animation Designer",
-      website: "https://www.google.com",
-    },
-  ];
+  // const employees = [
+  //   {
+  //     name: "Selva",
+  //     title: "Software Engineer",
+  //   },
+  //   {
+  //     name: "Nithish",
+  //     title: "Animation Designer",
+  //     website: "https://www.google.com",
+  //   },
+  // ];
   return (
     <>
-      <main>
+      {/* <main>
         {employees.map((employee) => (
           <EmployeeCard key={employee.name} item={employee} />
         ))}
-      </main>
-
+      </main> */}
+      {/* 
       <Heading>Hello World!</Heading>
       <Heading>Hello {name}</Heading>
       <Heading>Hello {name.length}</Heading>
@@ -34,8 +31,8 @@ export default function App() {
 
       <IconButton
         className="text-red-500 flex gap-2"
-        disabled
-        onClick={() => console.log("Clicked")}
+        disabled={false}
+        onClick={handleClick}
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -44,9 +41,9 @@ export default function App() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="lucide lucide-alarm-clock"
           >
             <circle cx="12" cy="13" r="8" />
@@ -63,8 +60,8 @@ export default function App() {
 
       <IconButton
         className="text-teal-500 flex gap-2"
-        disabled
-        onClick={() => console.log("Clicked")}
+        disabled={true}
+        onClick={handleClick}
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -73,9 +70,9 @@ export default function App() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="lucide lucide-annoyed"
           >
             <circle cx="12" cy="12" r="10" />
@@ -86,7 +83,9 @@ export default function App() {
         }
       >
         Smiley
-      </IconButton>
+      </IconButton> */}
+
+      <Appointment />
     </>
   );
 }

@@ -3,7 +3,7 @@ import { PropsWithChildren } from "react";
 export interface ButtonProps {
   size: "large" | "medium" | "small";
   onClick: () => void;
-  disabled: boolean;
+  disabled?: boolean;
   className: string;
 }
 
